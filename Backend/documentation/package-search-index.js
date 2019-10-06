@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.socialdima.Socialdima"},{"l":"com.socialdima.Socialdima.model"},{"l":"com.socialdima.Socialdima.repository"},{"l":"com.socialdima.Socialdima.resource"}]

@@ -1,0 +1,8 @@
+<div class="row justify-content-around" *ngFor="let message of messages">
+  <div class="col-4 sender"
+       [ngClass]="{'sender': message.sender !== id}">{{message.sender !== id ? message.text : ''}}</div>
+  <div class="col-4"
+       [ngClass]="{'text-right': message.sender === id, 'receiver': message.sender === id}">
+    {{message.sender === id ? message.text : ''}}
+  </div>
+</div>

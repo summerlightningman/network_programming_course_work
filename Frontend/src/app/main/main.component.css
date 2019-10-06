@@ -1,0 +1,33 @@
+#chat {
+  width: 65%;
+}
+
+.header {
+  color: #6c757d;
+}
+
+.interface-element {
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.dialogue {
+  height: 75vh;
+}
+
+
+
+.input {
+  box-shadow: 0 -15px 13px 0 white;
+}
+
+img {
+  border-radius: 5px;
+}
+
+span {
+  font-size: 1.2rem;
+  padding-left: 5px;
+}
+

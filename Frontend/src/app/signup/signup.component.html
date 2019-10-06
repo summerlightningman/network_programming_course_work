@@ -1,0 +1,24 @@
+<div class="text-center">
+  <form class="form-signin" (ngSubmit)="signUp(form)" #form="ngForm">
+    <h1 class="h3 mb-3 font-weight-normal">Регистрация</h1>
+    <label for="inputEmail" class="sr-only" >Никнейм</label>
+    <input type="text" class="form-control" placeholder="Никнейм" required="" autofocus="" name="nickname" ngModel>
+    <label for="inputEmail" class="sr-only" >Логин</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Логин" required="" autofocus="" name="login" ngModel>
+    <label for="inputPassword" class="sr-only">Пароль</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Пароль" required="" name="password" ngModel>
+    <div class="mb-3">
+
+    </div>
+    <label class="text-left avatar">Аватар
+    <input type="file" placeholder="Основное фото вашего профиля" required="" name="avatar" ngModel (change)="fileChange($event)" accept=".png,.jpg,.jpeg,.gif"></label>
+    <div class="checkbox mb-3">
+
+    </div>
+    <div class="checkbox mb-3">
+
+    </div>
+    <button class="btn btn-outline-secondary" type="submit">Зарегистироваться</button>
+  </form>
+</div>
+

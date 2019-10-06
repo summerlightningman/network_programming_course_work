@@ -1,0 +1,16 @@
+<div class="text-center">
+  <form class="form-signin" (ngSubmit)="submitForm(form)" #form="ngForm">
+    <h1 class="h3 mb-3 font-weight-normal">Войдите, пожалуйста</h1>
+    <label for="inputEmail" class="sr-only" >Логин</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Логин" required="" autofocus="" name="login" ngModel>
+    <label for="inputPassword" class="sr-only">Пароль</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Пароль" required="" name="password" ngModel>
+  <div class="checkbox mb-3">
+    <h6 style="color: tomato;" *ngIf="loginFailed">Логин и/или пароль не верны!</h6>
+  </div>
+    <div class="checkbox mb-3">
+      <p>Или <a routerLink="/signup" class="alert-link">зарегистрируйтесь</a> на сайте.</p>
+    </div>
+    <button class="btn btn-outline-secondary" type="submit">Вход</button>
+  </form>
+</div>

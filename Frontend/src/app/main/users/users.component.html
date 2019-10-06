@@ -1,0 +1,5 @@
+<div class="list-group-item list-group-item-action" *ngFor="let user of users" (click)="openDialogue(user.id)"
+     [ngClass]="{'list-group-item-dark': receiver === user.id}" >
+  <img src="http://localhost:8080/image/{{user.avatar}}" alt="" width="40" alt="{{user.avatar}}">
+  <span style="padding: 1%;">{{user.name}}</span>
+</div>
